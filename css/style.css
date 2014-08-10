@@ -3,8 +3,99 @@
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 }
+a, a:visited, a:focus, a:link{
+	color: inherit;
+	text-decoration: none;
+}
+.banner {
+	position: fixed;
+	width: 100%;
+	background: #000;
+	top: 0;
+	color: #FFF;
+	font-family: sans-serif;
+	text-align: center;
+	padding: 10px;
+	font-weight: lighter;
+	font-size: 13px;
+	z-index: 20;
+}
+.banner a{
+	color: #a3e599;
+	text-decoration: underline;
+}
+.social-banner .text{
+	font-size: 14px;
+	color: #FFF;
+}
+.social-banner {
+	position: fixed;
+	width: 100%;
+	background: #000;
+	bottom: 0;
+	color: #FFF;
+	font-family: sans-serif;
+	text-align: center;
+	padding: 10px;
+	font-weight: lighter;
+	font-size: 13px;
+	z-index: 100;
+}
+.social-banner span.text {
+	margin-right: 20px;
+	position: relative;
+	top: -4px;
+}
+.bg{
+	background: radial-gradient(circle closest-side at 60% 43%, #b03 26%, rgba(187,0,51,0) 27%), radial-gradient(circle closest-side at 40% 43%, #b03 26%, rgba(187,0,51,0) 27%), radial-gradient(circle closest-side at 40% 22%, #d35 45%, rgba(221,51,85,0) 46%), radial-gradient(circle closest-side at 60% 22%, #d35 45%, rgba(221,51,85,0) 46%), radial-gradient(circle closest-side at 50% 35%, #d35 30%, rgba(221,51,85,0) 31%), radial-gradient(circle closest-side at 60% 43%, #b03 26%, rgba(187,0,51,0) 27%) 50px 50px, radial-gradient(circle closest-side at 40% 43%, #b03 26%, rgba(187,0,51,0) 27%) 50px 50px, radial-gradient(circle closest-side at 40% 22%, #d35 45%, rgba(221,51,85,0) 46%) 50px 50px, radial-gradient(circle closest-side at 60% 22%, #d35 45%, rgba(221,51,85,0) 46%) 50px 50px, radial-gradient(circle closest-side at 50% 35%, #d35 30%, rgba(221,51,85,0) 31%) 50px 50px;
+	background-color: #b03;
+	background-size: 100px 100px;
+	background: radial-gradient(circle closest-side at 60% 43%, #b03 26%, rgba(187,0,51,0) 27%), radial-gradient(circle closest-side at 40% 43%, #b03 26%, rgba(187,0,51,0) 27%), radial-gradient(circle closest-side at 40% 22%, #d35 45%, rgba(221,51,85,0) 46%), radial-gradient(circle closest-side at 60% 22%, #d35 45%, rgba(221,51,85,0) 46%), radial-gradient(circle closest-side at 50% 35%, #d35 30%, rgba(221,51,85,0) 31%), radial-gradient(circle closest-side at 60% 43%, #b03 26%, rgba(187,0,51,0) 27%) 50px 50px, radial-gradient(circle closest-side at 40% 43%, #b03 26%, rgba(187,0,51,0) 27%) 50px 50px, radial-gradient(circle closest-side at 40% 22%, #d35 45%, rgba(221,51,85,0) 46%) 50px 50px, radial-gradient(circle closest-side at 60% 22%, #d35 45%, rgba(221,51,85,0) 46%) 50px 50px, radial-gradient(circle closest-side at 50% 35%, #d35 30%, rgba(221,51,85,0) 31%) 50px 50px;
+	background-color: #b03;
+	background-size: 100px 100px;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	z-index: -2;
+	opacity: 0.12;
+}
+.top-message{
+	position: absolute;
+	width: 600px;
+	top: 50%;
+	margin-top: -240px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 100;
+	left: 50%;
+	margin-left: -325px;
+	text-align: center;
+	font-size: 20px;
+	color: #333;
+}
+.bottom-message{
+	position: absolute;
+	width: 800px;
+	top: 50%;
+	margin-top: 200px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 100;
+	left: 50%;
+	margin-left: -410px;
+	text-align: center;
+	font-size: 24px;
+	color: #333;
+	line-height: 24px;
+}
+.rb-wrapper{
+	width: 590px;
+	height: 360px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -180px 0 0 -295px;
+}
 .boy{
-	margin: 100px 0 0 100px;
+	margin: 42px 0 0 50px;
 	float: left;
 }
 .boy-torso{
@@ -396,6 +487,28 @@
 	-webkit-animation: eyeOpen 2s linear infinite;
 	-moz-animation: eyeOpen 2s linear infinite;
 }
+.boy-mouth-closed:before{
+	background: none repeat scroll 0 0 rgb(254, 195, 137);
+    content: "";
+    height: 40px;
+    margin: -7px 0 0 -1px;
+    position: absolute;
+    transform: rotate(50deg);
+    -webkit-transform: rotate(50deg);
+    -moz-transform: rotate(50deg);
+    width: 20px;
+}
+.boy-mouth-closed:after{
+	background: none repeat scroll 0 0 rgb(254, 195, 137);
+    content: "";
+    height: 40px;
+    margin: -7px 0 0 49px;
+    position: absolute;
+    transform: rotate(120deg);
+    -webkit-transform: rotate(120deg);
+    -moz-transform: rotate(120deg);
+    width: 20px;
+}
 .boy-mouth-open{
 	width: 50px;
 	height: 18px;
@@ -539,7 +652,7 @@
 }
 .girl{
 	float: left;
-	margin: 100px 0 0 100px;
+	margin: 40px 0 0 100px;
 }
 .girl-face{
 	width: 115px;
@@ -583,14 +696,36 @@
 	border-radius: 50%;
 	margin: -85px 0 0 45px;
 }
-.girl .boy-mouth-closed{
-	margin: 96px 27px;
-	width: 50px;
-	height: 20px;
-	border-color: #E86680;
-	animation: eyeOpen 2s linear infinite;
-	-webkit-animation: eyeOpen 2s linear infinite;
-	-moz-animation: eyeOpen 2s linear infinite;
+.girl .boy-mouth-closed:before {
+    background: none repeat scroll 0 0 rgb(254, 195, 137);
+    content: "";
+    height: 40px;
+    margin: -10px 0 0 -12px;
+    position: absolute;
+    transform: rotate(50deg);
+    -webkit-transform: rotate(50deg);
+    -moz-transform: rotate(50deg);
+    width: 20px;
+}
+.girl .boy-mouth-closed:after {
+    background: none repeat scroll 0 0 rgb(254, 195, 137);
+    content: "";
+    height: 40px;
+    margin: -11px 0 0 39px;
+    position: absolute;
+    transform: rotate(120deg);
+    -webkit-transform: rotate(120deg);
+    -moz-transform: rotate(120deg);
+    width: 20px;
+}
+.girl .boy-mouth-closed {
+    animation: 2s linear 0s normal none infinite eyeOpen;
+    -webkit-animation: 2s linear 0s normal none infinite eyeOpen;
+    -moz-animation: 2s linear 0s normal none infinite eyeOpen;
+    border-color: rgb(232, 102, 128);
+    height: 20px;
+    margin: 96px 27px;
+    width: 50px;
 }
 .girl-eye1{
 	width: 26px;
